@@ -234,6 +234,28 @@
       <p>Congratulations! Ahora tu compras en otra dimension. 🎉</p>
       <h1>API call Service</h1>
       <div>
+        <h2>
+          Ingresa productos, actualiza y elimina de acuerdo a tu preferencia
+        </h2>
+        <form>
+          <input type="text" placeholder="enter name" name="name" ngModel />
+          <br /><br />
+          <input type="text" placeholder="enter email" name="email" ngModel />
+          <br /><br />
+          <input
+            type="text"
+            placeholder="enter product"
+            name="product"
+            ngModel
+          />
+          <br /><br />
+          <button>Add product</button><br />
+          <br />
+          <button>delete product</button><br />
+          <br />
+          <button>update product</button>
+        </form>
+
         @for(product of productData; track product.id){
         <ul>
           <li><b>name</b>{{ product.title }}</li>
